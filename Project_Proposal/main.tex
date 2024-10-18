@@ -1,9 +1,9 @@
 \documentclass[12pt]{article}
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
 \usepackage[acronym]{glossaries}
 
 \usepackage{supertabular} %Si jamais des tableaux vont sur plus qu'une page
 
-\usepackage{biblatex}
 \usepackage{calligra}
 \usepackage{graphicx,wrapfig,lipsum}
 \usepackage[T1]{fontenc}  %Pour faire des ë,ö,û,...
@@ -33,7 +33,6 @@
 \usepackage{amsmath}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \counterwithin*{equation}{section}
-\usepackage{hyperref}
 \usepackage{tcolorbox}
 \usepackage{subfigure}
 \usepackage{hhline}
@@ -78,6 +77,7 @@
 \usepackage[english]{babel}
 \usepackage{listings}
 \usepackage[utf8]{inputenc}
+\usepackage{csquotes}
 \usepackage{biblatex} %Imports biblatex package
 \usepackage{enumitem}
 \newlist{todolist}{itemize}{2}

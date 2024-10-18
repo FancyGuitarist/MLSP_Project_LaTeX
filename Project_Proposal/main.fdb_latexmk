@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1729282943.15833 "main.bcf" "main.bbl" "main" 1729282951.05343 0
+["biber main"] 1729284919.97514 "main.bcf" "main.bbl" "main" 1729285152.89599 0
   "Biblio.bib" 1729282943.0441 6846 74e5b06085c0094d619235e8eb6a48f3 ""
-  "main.bcf" 1729282950.89987 108153 966c9e5ba0891a65bbe42ac35a834fe3 "pdflatex"
+  "main.bcf" 1729285152.74019 108153 966c9e5ba0891a65bbe42ac35a834fe3 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1729282949.2934 "/Users/simonferland/Documents/GitHub/MLSP_Project_LaTeX/Project_Proposal/main.tex" "main.pdf" "main" 1729282951.05374 0
-  "/Users/simonferland/Documents/GitHub/MLSP_Project_LaTeX/Project_Proposal/main.tex" 1729282859.00289 5860 14161812928f1756f326505976d946a6 ""
+["pdflatex"] 1729285151.19269 "/Users/simonferland/Documents/GitHub/MLSP_Project_LaTeX/Project_Proposal/main.tex" "main.pdf" "main" 1729285152.89639 0
+  "/Users/simonferland/Documents/GitHub/MLSP_Project_LaTeX/Project_Proposal/main.tex" 1729285151.07062 5881 de19624e7cbd2142c4c133d256b1c323 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -172,6 +172,9 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty" 1696191071 72619 ee90b6612147680fd73c3b1406a74245 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/caption/ltcaption.sty" 1645391520 7418 021d7c4eb11bde94592761855a3d046e ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/collectbox/collectbox.sty" 1666037909 9124 59c3b56f1a073de66e3eea35f9c173c8 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.cfg" 1429144587 7068 06f8d141725d114847527a66439066b6 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.def" 1663185836 21994 2bc2a882df92d97dbce35c06bb1d3541 ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/csquotes/csquotes.sty" 1663185836 62761 3c92d495a9e03d7254b9a3266aa17164 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/datatool/datatool-base.sty" 1569706369 93620 4e9f9aa754a2337e89df3eeca1527291 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/datatool/datatool-fp.sty" 1569706369 3944 92aa06b5428fcc1b751c82409f23f92f ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty" 1561238569 51697 f8f08183cd2080d9d18a41432d651dfb ""
@@ -285,12 +288,12 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "figs/ul_logo.pdf" 1729282764.92999 30305 30345813228c49acebc4307a677e3314 ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1729282950.89413 1716 a973d2ff62aa044469ef4be00b0e7911 "pdflatex"
-  "main.bbl" 1729282945.66267 6321 27f96571d7ca2221fbdc6a5e66ab7450 "biber main"
+  "main.aux" 1729285152.73604 1716 b195e78ba6aa86481ee76ba8b4ec3aec "pdflatex"
+  "main.bbl" 1729284922.63115 6321 27f96571d7ca2221fbdc6a5e66ab7450 "biber main"
   "main.gls" 0 -1 0 ""
-  "main.out" 1729282950.89605 689 1865a9ecc9d770d05e90a9a538d22e64 "pdflatex"
-  "main.run.xml" 1729282950.90105 2301 51e99f491dd7ac36e2de84b3edb4b012 "pdflatex"
-  "main.tex" 1729282859.00289 5860 14161812928f1756f326505976d946a6 ""
+  "main.out" 1729285152.73745 689 1865a9ecc9d770d05e90a9a538d22e64 "pdflatex"
+  "main.run.xml" 1729285152.74097 2301 51e99f491dd7ac36e2de84b3edb4b012 "pdflatex"
+  "main.tex" 1729285151.07062 5881 de19624e7cbd2142c4c133d256b1c323 ""
   (generated)
   "main.aux"
   "main.bcf"
