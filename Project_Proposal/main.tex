@@ -1,0 +1,165 @@
+\documentclass[12pt]{article}
+\usepackage[acronym]{glossaries}
+
+\usepackage{supertabular} %Si jamais des tableaux vont sur plus qu'une page
+
+\usepackage{biblatex}
+\usepackage{calligra}
+\usepackage{graphicx,wrapfig,lipsum}
+\usepackage[T1]{fontenc}  %Pour faire des ë,ö,û,...
+\usepackage{icomma}       %Pour écrire 1,8 au lieu de 1, 8 (espace après la virgule en mode math)
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{array}     %Pour pouvoir faire des matrices et tableaux
+\usepackage{color}     %Pour écrire du texte en couleur
+\usepackage{amsmath,mathtools}   %Pour écrire des équations
+\usepackage{amssymb,amsfonts}   %Pour loader des variables, lettres, flèches, signes...
+\usepackage{esint}     %Pour faire des intégrales fermées et doubles
+\usepackage{multirow}  %Pour fusionner des cases dans un tableau
+\usepackage{float}     %Pour les figures flottantes et placer les figures dans le texte
+\usepackage{graphicx}  %Pour intégrer des graphiques, images et photos..
+\usepackage{tikz}   %dessiner toute sorte de belles choses.. Pratiquement sans fin ;)
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry} %Pour controler les marges
+\usepackage{adjustbox}
+\usepackage{hyperref}  %Pour mettre des liens de références dans le texte
+
+\usepackage{caption}   %Pour pouvoir mettre des légendes aux figures «captions»
+\usepackage[bottom]{footmisc}
+\usepackage{gensymb} 
+\usepackage{tabulary}  
+\usepackage{fancyhdr}  
+\usepackage{siunitx}   %Pour écrire des unités du système international
+\usepackage{textcomp}
+\usepackage{amsmath}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\counterwithin*{equation}{section}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\usepackage{subfigure}
+\usepackage{hhline}
+
+\usepackage{pythonhighlight}
+\usepackage{cancel}
+% R CURSIF
+
+\usepackage{calligra}
+\newcommand{\angstrom}{\mbox{\normalfont\AA}}
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}
+
+
+%%%%%
+
+
+\makeatletter
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 1pt
+    \futurelet \reserved@a \@xhline
+}
+\newcolumntype{"}{@{\hskip\tabcolsep\vrule width 1pt\hskip\tabcolsep}}
+\makeatother
+\counterwithin*{equation}{section}
+\usepackage{parskip}  
+\usepackage{braket}
+
+\setlength{\parindent}{0pt} 
+\setlength{\parskip}{15pt}  
+\renewcommand{\baselinestretch}{1.2}
+\newcommand*\rfrac[2]{{}^{#1}\!/_{#2}}
+
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{35.1pt}
+\pagestyle{fancy}
+\rhead{\footnotesize 2024}
+\lhead{\footnotesize{Project Proposal}}
+\renewcommand\headrulewidth{0.7pt}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage{biblatex} %Imports biblatex package
+\usepackage{enumitem}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+
+\addbibresource{Biblio.bib} %Import the bibliography file\usepackage{csquotes}
+
+\newacronym{amt}{AMT}{Automatic Music Transcription}
+\newacronym{mir}{MIR}{Music Information Retrieval}
+\newacronym{nn}{NN}{Neural Network}
+%\newacronym{}{}
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\includegraphics[scale=0.35]{figs/ul_logo.pdf} 
+\line(1,0){450}\\
+[2mm]
+\begin{large}
+\textbf{Project Proposal} \\ 
+\end{large}
+\line(1,0){450}\\
+[1.5cm]
+Realized by\\
+Antoine Veillette\\
+Kibalou Betchaleel Banakinao\\
+Simon Ferland\\
+[3cm]
+As part of the course\\
+Machine Learning for Signal Processing\\ 
+[2.5cm]
+Work presented to\\
+M. Cem Subakan\\
+[3cm]
+Department of computer science and software engineering\\
+Faculty of science and engineering\\
+Laval university\\
+
+\today
+\end{center}
+\end{titlepage}
+\begin{abstract}
+\acrfull{amt}  is a fundamental problem in 
+\acrfull{mir}. In \cite{Zhang2020}, it was recommended that the pseudo bispectrum analysis model could be improved by implementing post-processing using neural network. The following project goal is to implement such post processing to improve the result obtained by \cite{Zhang2020}.
+
+\end{abstract}
+\section{Introduction}
+
+\section{Litterature review}
+in \cite{Liu2020}, they used \acrlong{nn} in order to do \acrlong{amt} 
+\section{Input-Output-dataset}
+The dataset used will be the MAESTRO V3 dataset\cite{hawthorne2018enabling}
+\section{Performance metric}
+the performance metrics will be evaluated using the Mir\_eval librairy. The main metric will be the $f$ measure with $\beta = 1$.
+\section{Computationnal ressources}
+We will use Valeria to train our model.
+\section*{Checklist}
+
+\begin{todolist}
+    \item[\done] \textbf{Realism:} The project will be completed within a reasonable time frame, using available resources like Google Colab.
+    
+    \item[\done] \textbf{Well-defined dataset:} We will use the Maestro v3 dataset to label our pseudo 2D spectrums with the right note labels.
+    
+    \item[\done] \textbf{Clear input-output definition:} The input will be song in wav format and the output will be a pianoroll of the song.
+    
+    \item[\done] \textbf{Non-trivial:} The project explores a novel approach to AMT using pseudo 2D spectrum as the input of our neural nets as proposed in \cite{Zhang2020}. 
+    
+    \item[\done] \textbf{Machine learning/signal processing focus:} The project incorporates machine learning techniques, specifically [ML/SP technique], ensuring concrete predictions.
+    
+    \item[\done] \textbf{Literature grounding:} A literature review is included, situating the project within existing works, referencing relevant papers such as \cite{Zhang2020} and \cite{Liu2020}.
+\end{todolist}
+
+\printglossary
+\printglossary[type=\acronymtype]
+
+
+
+\printbibliography
+
+\end{document}
